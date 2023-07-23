@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+<!-- Local style sheet relative to workspace folder -->
+<link rel="stylesheet" href="/style.css">
+
+<!-- Local style sheet relative to this file -->
+<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <style>
+    /* Add your custom CSS styles here */
+
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color:rgba(77, 40, 112, 0.336);
+      color:black
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: white
+      transition: background-color 0.3s ease;
+      .ul:hover {
+          background-color: rgb(230, 9, 138);
+        }
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    nav a {
+      color:black;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: rgb(176, 116, 233);
+      color:black;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>KOTICHUKKALA SRI SANTHI PRIYA</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#present">PRESENT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8AAAD39/fU1NRpaWn8/PwMDAxkZGTNzc3Kysra2tqZmZnh4eFbW1ttbW3Dw8OioqImJia3t7cyMjISEhI7OzuIiIgfHx9JSUmsrKyCgoLu7u5BQUEYGBh3d3dRUVGQkJC2CO8fAAAEMElEQVR4nO2ZaZOqOhBAk0CQTUAWUZbR//8rb2cBYQCn3isb+dCn6t5iQOXYnU46yBhBEARBEARBEARBHI/8ln9bYSTjnIfflrBE4OL537YwqLgcRUbF5SgyOi4HkdEuP8eQ0Tm6h4eQ0XHJmHMEmci4HELGjN3wEDK2jg4hY+aXY8jouDTHkDE1HR9CxtZ0eAQZ6/JFmTb0A0cfmRyxmUzmBzPw+hsR525X1J5RyG1cpjLc47+446i02Xm8RSIZOw0uU5kFNwyVuJneQvW6LucnNpVpzysyGF3x82I+uz5lqePokbCQYa0zIWzGNH4WpzIhj6bjcSkz467eEX3e5V6qDz6nYnZ2LhP/ek+GEhdpl59F8ucyeTjLUYYUlx+9/IjF+bnMCgjjJdr6jn/JILjcN+vzJSOqFReEHDnl3EXG6fP0cNuZDEzNU7BqmnXz75i6Zr5v5jIzsGqaPe2NrUox5OCNDE5NA7Gad4c6krbDvFSP5Fea9nBhzWTAyESrXINBblUGLUdMqHl35jKdbtZk8OKiPzq1x9GixEHGXXNBiQsT0BLcbChSvlgME7WGn2fgxYXFk69ZLKa+uNtr3tXcX8FIZyWuaNdmXawcMT0oanMk3UmJs9hxWh2XLklcN5lwwnva2Y3lEsO8e7VnxRVSVimX6ncPg0hbjCNAZSmwLmN6upZJAcg9ZMJ6LGxYFS42S9fRBeKiZSZvwfPyvTEcsCupzFE7Lk8VLAlSChk3TWvfkbtoYyaAHZkj9bd9cP6AOzOza9QucE1IkFHDPDEhUc/0sHaQQQk3VJmQ7OzBsqAz4vC6hPTB/yAKlwR76GsgLX3EvbbT15AmfcOEl4WSkSKueF/26l8R6xOsKz1Xv0oGnJdYMqp/yOE2TOgB3Jo7XrnXg0wPpa7+FO2l509zCTbfNVaa2qKHCVXJyJT33NdZEaLjpYpNJzQy8HqoOR0jWEuL9u/P/X90Hkx6IAPJ8Up+NTJm0iuuQtc1g0j1XqzPq5rrsFzMcqDrxC4HprTUlloHQJVXCxdcaWaYy7Kn+Bz5u4XS0rxaHrV7Qnoaw/5qITTKt7DHqv3CW63+aK6Y3UrawIgb9KjLTfDHeN922gdpQ+xSxM5K8b4hF3rnmAyL43na8mCwvVURgVm+k+Gl+dYQ/xhbm7hHZZ+qRUNcVBAvyM1WxNe3t4YiGC81mP3vwMbGX/UQbvo6r6TxZt+B1Uci5/PpmcaTtk4NmNJBlzGb5/T9a3SJ402+EzYfo/2HV3yOrQeMFjPd/Ozjsvno1ZDjbiSXrD+UBkSq9/rlLuNlYPVxPQujm9lB7VBHM6LJDxm+4/hpdqrthLxjigbmP/G8aHbccE8Q2eL3pHOGuk6/14nv6mfB0vPKuujce/w9FUsb+kCItichCIIgCIIgCIIgCIIgCIIgCGJH/gHpHy4xNXDylAAAAABJRU5ErkJggg==" alt="Icon" width="25" height="25">About Me</h2>
+    <p>
+      An Organised and motivated individual  capable of time management and working under pressure in all environments. Seeking a challenging position in reputed organisation where I can learn new skills, expand my knowledge and leverage my learnings.
+    </p>
+    </section>
+    <section id="education">
+      <h2><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAaVBMVEX///8BAQEAAAB2dnbf39/S0tJxcXGvr6/l5eX09PTY2Nj8/PylpaW6urrPz8/c3NxTU1MyMjJfX1/t7e0lJSVkZGQ3Nzd8fHySkpKIiIjIyMg9PT1NTU2CgoJsbGwfHx8VFRVFRUWbm5tetyqrAAADrElEQVRoge2Z2XqDIBBG46h1wyVuUWPW93/IioqCcUEkueK/Sb9UPB2YjenppKSkpKSkpKSkpKSk9Du5t/xaur/HZtDqHv6O6Z1O4V/D1DTQmg/d+BnZ6LCdfoe2daC4Hfpifx2b/LFUgv5Lvoq157Bkw79nNT5bbZbbsb901uGStbTV8oNrcZOnZy13w+1LH7c9YPFTroe32E1zR6sloTtrebnS0LNxy4HWj8U1l0stocWtxgEkQiVswbjejFseq/fHtXHfxm4+sT+uQ30rboFIW30Oezj/hhs6j7V65brVthfwB5fBlxz7bsvlOhEOD/e4XAogIAsC2E5r+KyddW7y5PJkSKkdsi5n2KI3v10nl3wBBGd2mVMV2XMdDsUq+MYXugCfh+bY1qVeNh1uq2CLF1z3O+cwO+glZhHnc3AAfxXc7DW1ai0+z1biOImVv+4oTDz6FUno668HZXv707rBjaqIr/g2D13zPok84tJn4Se7ekcpSTEAUbCAY9A1X5JmLYJcRy4L91z/1sJjHixWUO8r/SO9LvxJIU6qt8mJxTIjodLU0TMUeNuIRXQs0noM9HPph6L0IN7ZbE0Mh+dbFC1k9cDOzAMbHjDo7fgeLY6JS9kbmWMRvdvNgI7bpIS7qNU4pewDj+nCxsVYFNxZrfG4WdsTRVTcGo13HgA3jUbM5eD4bJlB0GFwh95uNLLJ/OkA2EKk8JnZKhpjydk6b/84GM4DOlhGt3FLsOgMMsBAo5lsRs+chgqEsSAHjMs+Ilmo+oxrOm49lLYL5IDxu9MBHUzieooFTSIYv+uJyHctGgi2HtIFevbfSwXjHR2s7oOLjlsPUc2aRDCxmqDbyjWWAg9pzIOywU1jN3i4Wwzjagc9mBZRNrhvbNHkNtIFEOtvMsDsvViDCZrCUvXYkgL+CNsxrr0Pa7tHvgHu3pwWQdJcWB6zOVQG2F/IzsMoYv6XFQELNwL24stnvyXgvq0Pm9WirU8q0tjn43rhVhOJjBT7Iz4ZgWmKXiu8637wi3D5bqgLCjjuy8wnQJ9IvahzQMHOmndM8LnRRbcQUtFRrrWnpx8NNMmqAz09LxiXY3O6qukURMEnJ+O6OeJJGuXDfYWG64Hb21yvNYOdzDoK/MeKH3EvU9cWc2SXQu/VdM0frmbH/xmVWPHM/K6/hcdoZlLq1UPaPii7urxSmOhcl9XCfNapRYN4Ronpv/W4vub5NcpKq3I3JrNKSkpKSkpKSkpKSkqS9A9meCvfUxggcgAAAABJRU5ErkJggg==" alt="Icon" width="25" height="25">Education</h2>
+    <p>I am currently pursuing final year of Btech from ECE specialization in Velagapudi Ramakrishna Siddhartha Engineering College. And my current CGPA is 8.04.</p>
+    <p>I finished my Intermediate in Tirumala Educational Institutions with CGPA of 9.67.</p>
+    <p>I completed my Secondary Education in Sri Chaitanya Techno Curriculum with CGPA of 9.7.</p>
+  </section>
+
+  <section id="skills">
+    <h2><img src="data:image/png;base64,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"= alt="Icon" width="25" height="25">Skills</h2>
+    <p>C </p>
+    <p>Python</p>
+    <p>Verilog</p> 
+    <p>MATLAB</p> 
+    <p>JAVA</p>
+    <p>HTML</p> 
+    <p>CSS</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="projects">
+    <h2><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEX///8AAACMjIze3t7j4+MqKiqurq75+fm8vLzKysrw8PCXl5f29vapqan8/PwtLS1nZ2cJCQkSEhLQ0NAcHBxYWFiAgIA9PT1zc3OhoaEYGBg2Njbq6urExMRFRUV5eXlOTk4jIyNQl4BuAAAE70lEQVR4nO2a25KjIBBAaW84akjwmjjm9v8/uQ0EjdHNJDVBt2r7PGypoYaz0ECDMkYQBEEQBEEQBEEQBEEQxP8C74JErC3xQHECgL2/tsaII2hksLbIHTwHOHlbgB1fW2UgRp1MqUnTgWsH19cmiqI9QITXHoCHd9HaobWBGzXenOzN19IaUWrxOsYr65HX8dlewx6HY18sPbp3goGC8QvMsbtrQl3OMd5Yqnr0sS11LxUvIRVuNbk/dhxZRKUpdF1I6nr0DRljvpxxahLGkluZaCGp8H7IF6eJU3U/rxdrSLHkuBkRfWX3P3+tIvUDJPUqJPUqJPUq60gl9dNscxUpv4HqWaK5qFRgaiq+Ac7/ilRRSpVeYnIO6dPyS0qhTRiwA5jk/B+RUhnoBa9bUyGPNzMckqUDPVVZyvct003m0+Jg8dGHVyebOSXTrGodKbGrhswpmUUsP08lr+zRaZl5lZWkuqfli6q6ON/FT6Q219mG40uevPRSZuQJvG+mAS84zxa0slKpp2/3AHLmqIBnGTfWXV3Xzo+GblKeXog7nDNPyUwp5WSaSk3850WkMuZvAY5JgwvgnBN2n7i1lDofkotIYRQHrV5IahQQapmReZkr2jzfM8H4plA/iK5RpUx4dbGrMPMg36IUFzG0OXhCZKqfdN32rKNinNeQbxgOgCAHWYIOqqLB4i6leMYxpZIREyp4MpGkdc/5wPgOSgylLq6glW1+hSpOUuPrRkrK0EixNBbYUBzbiveTgmoKfJpCKfMcU2XVqdccDS/gUgpalEIP7BzOVe8pqQzjWvkpWfVjEKJUCWhUyra9Stu1jiYH3X26chVNSiYbpPCS6ec4E8jWSAHGfqtuHM4NOPq2+P9V/YXTNg5DoVYUVMQmEkIvLvhcH/RLyMHGv1T/5q7ekkzWvm4zV+xgR2LsB/7RJss/bDI+JoWb0cO0lF+aw0+7AqntIVI+zyh+LdUFfW0Pm9EkKPxaO2wHB98k8akeIq6kilIdAc9tRuN+21COWrR/vP38G4hhQa7MCf44pASr+9q90S/D8+db6l9IccxZzjhJS5PqZkcD/jK8gxiPtaJ/vv/4YmNjyryVsZvRIMRBj8Me12evvNUdjo6udZpjeHog8isppvKWxjZGYOtT1wcz1KpxRGe3JjwfP78qD1NCJy99W/DAYIab2KnaLw9Sumn3s+nX56SY/9cKTFCPuy/4dhPkD1J/x7wUHA/92OGc/pJUN5OnNA6n9KlUNilzm75HfZWaR/W0tAupzX4c0EJvKgzDxJraXHnv4suFBym1Ga3HJfxrP01CpV5UsqzYDY92Dtqq34yaMMYdlHw4KihyuKOqvXr8otlBWN2kztpFnSo2k0rUe+XTHia0Wm4m0fmUFC7FYZc1sxvkpKmPXZ/mDUS8SEPpItKNlFBT0Vb2WXe3G7At97UdKTUOv07oA13P2nZ3GdzV3icH41By0W0TKXXVz89zLcV0S32fThc9HOuZP/Z5KV71TkJtbCw2CehCVMmPSWc2xy4/rXr9zFNPDSb7VG1WOckP3pVKqj7RU1/H7Z0sMO9KYfintmR0cPq13rtH1ovwrlSGO2SHHWd4+3A/3JbOPzVTBxzvxMdSXwWVafQ63kJSb/N/Svk/Ozzy7egA6I4keBfnMwJBEARBEARBEARBEARBECvxB6t7QEdhWI16AAAAAElFTkSuQmCC" alt="Icon" width="45" height="45">Projects</h2>
+    <!-- Add your projects here -->
+    <div class="project">
+      <div>
+        <h3>Project 1</h3>
+        <h4>Auto Plastic Segregation Bin</h4>
+        <p>In this project, we created a bin, which can seperate plastic and non-plastic. It contains two chambers covered with a lid,which moves with the help of a sensored motor that is able to seperate plastic and non-plastic. As a result we get a heap of plastic which makes recycle process easy.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div>
+        <h3>Project 2</h3>
+        <h4>Prediction of Metastases in Breast Cancer Patients Using Deep Learning Models.</h4>
+        <p>Metastases is a secondary stage cancer.In breast cancer patients there is a possibility of reaching metastatic stage which effects Brain,Lungs,Liver and Bones.We have to predict it beforehand to avoid severe damage.But the traditional method needs professional experts and it takes more time too.So, in this project we are using deep learning models(Vgg-19,Resnet-50) to predict the metastatic stage faster so that we an increase the life span of the patients.</p>
+      </div>
+    </div>
+
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="present">
+    <h2><img src="data:image/png;base64,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" alt="Icon" width="25" height="25">Present</h2>
+    <p>I am doing internship under IBM SkillsBuild program for Front End Development. I am taking traning under Wipro TalentNext program for Java Full Stack development.And I also taking traing in Internshala trainings for Animation.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2><img src="data:image/png;base64,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" alt="Icon" width="25" height="25">Contact Me</h2>
+    <p>You can reach me at: santhipriyakotichukkala@gmail.com.com</p>
+      <p>Phone No: 9573498739</p>
+      <p>Linkedin:https://www.linkedin.com/in/santhi-kotichukkala-348935249</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
